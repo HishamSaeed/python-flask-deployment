@@ -8,7 +8,7 @@ CORS(app)
 def hello_world():
     return 'Hello, world! , this is just a demo for flask . This is a demo for fenicsWeb'
 
-@app.route('/t_start')
+@app.route('/t_start', methods=["GET"])
 def getTStart():
     return jsonify({ "tStart": 32 })
 
