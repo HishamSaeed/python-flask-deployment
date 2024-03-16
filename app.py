@@ -10,7 +10,7 @@ def hello_world():
 
 @app.route('/t_start', methods=["GET"])
 def getTStart():
-    response = jsonify({'tStart': 32})
+    response = jsonify({'tStart': 37})
     response.headers.add('Access-Control-Allow-Origin', 'http://localhost:5173')
     response.headers.add('Access-Control-Allow-Credentials', 'true') 
     return response
